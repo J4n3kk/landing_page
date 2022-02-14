@@ -1,0 +1,118 @@
+
+
+body {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: azure;
+    width: 75%;
+    row-gap: 50px;
+    padding: 0;
+}
+
+.main div {
+    display: flex;
+}             
+
+.header {
+    justify-content: space-between;
+}
+
+.box-1 {
+    justify-content: space-between;
+}
+
+.box-2{
+    flex-flow: column nowrap;
+}
+
+.header, .box-1, .footer {
+    background-color: #1f2937 ;
+    color: #f9faf8;
+}
+
+.logo {
+    width: 70px;
+}
+
+.box-1 .left {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.box-1 .right img{
+    width: 500px;
+    height: 300px;
+    border-radius: 8%;
+}
+
+.box-2 div {
+}
+
+.box-2 .top {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-size: xx-large;
+}
+
+.box-2 .bottom {
+    display: flex;
+    flex-direction: row nowrap;
+    column-gap: 20px;
+    justify-content: center;
+} 
+
+.box-2 .bottom img {
+    width: 250px;
+    height: 250px;
+    border-radius: 4%;
+    border: 3px solid rgb(102, 102, 190);
+}
+
+.box-2 .bottom div {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-4 .left {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.footer {
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .text {
+    padding: 20px;
+}
+
+.box-4 .container {
+    background-color: rgb(99, 203, 235);
+    border-radius: 5%;
+    padding: 20px 100px;
+
+}
+
+.box-4 .container button {
+    margin: auto 100px;
+
+}
+
+.box-3 {
+    flex-flow: column nowrap;
+    margin: 75px 100px;
+    background-color: gainsboro;
+} 
+
+.box-3 .author {
+    align-self: flex-end;
+    font-weight: 600;
+}
