@@ -1,6 +1,11 @@
 
 
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -10,21 +15,71 @@ body {
     display: flex;
     flex-flow: column nowrap;
     background-color: azure;
-    width: 75%;
-    row-gap: 50px;
+    width: 100%;
     padding: 0;
 }
 
 .main div {
     display: flex;
+    justify-content: center;
 }             
 
-.header {
-    justify-content: space-between;
+.main .header {
+    justify-content: center;
+    column-gap: 898px;
 }
 
+.header .right div {
+    padding: 10px 10px;
+    font-weight: 550;
+}
+
+
 .box-1 {
-    justify-content: space-between;
+    padding: 0 0% 60px;
+    column-gap: 40px;
+}
+
+.box-1 .left {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 700px;
+}
+
+.box-1 .left div{
+    justify-content: left;
+}
+
+.box-1 .right {
+    width: fit-content;
+}
+
+.box-1 .right img{
+    width: 500px;
+    height: 300px;
+}
+
+.box-1 .left :nth-child(1) {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+.box-1 .left :nth-child(2) {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.box-1 .left button {
+    color: #f9faf8;
+    width: fit-content;
+    padding: 6px 25px;
+    background-color: #3882f6;
+    border: none;
+    border-radius: 7%/20%;
+    font-weight: 600;
+    margin: 10px 0;
+
 }
 
 .box-2{
@@ -40,17 +95,6 @@ body {
     width: 70px;
 }
 
-.box-1 .left {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-.box-1 .right img{
-    width: 500px;
-    height: 300px;
-    border-radius: 8%;
-}
-
 .box-2 div {
 }
 
@@ -61,23 +105,32 @@ body {
     font-size: xx-large;
 }
 
+.box-2 {
+    margin: 0 20% 70px;
+}
+
 .box-2 .bottom {
     display: flex;
     flex-direction: row nowrap;
-    column-gap: 20px;
+    column-gap:60px;
     justify-content: center;
 } 
 
 .box-2 .bottom img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 4%;
-    border: 3px solid rgb(102, 102, 190);
+    border: 3px solid #3882f6;
 }
 
 .box-2 .bottom div {
     display: flex;
     flex-direction: column;
+    width: 200px;
+}
+
+.box-2 .bottom div span {
+    text-align: center;
 }
 
 .box-4 .left {
@@ -94,23 +147,53 @@ body {
     padding: 20px;
 }
 
+.box-4 {
+
+}
+
 .box-4 .container {
-    background-color: rgb(99, 203, 235);
-    border-radius: 5%;
-    padding: 20px 100px;
+    background-color: #3882f6;
+    border-radius: 1% / 10%;
+    margin: 70px 15%;
+    padding: 20px 120px;
+    color: #f9faf8;
 
 }
 
 .box-4 .container button {
     margin: auto 100px;
+    font-weight: 700;
+    background-color: #3882f6;
+    width: 100px;
+    padding: 3px;
+    border: solid 1.5px;
+    border-color: #f9faf8;
+    color: #f9faf8;
+    border-radius: 2%/10%;
+}
 
+.box-4 .container .left :nth-child(1){
+    color: #f9faf8;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.box-4 .container .left :nth-child(2){
+    color: #dde0d9;
+    font-weight: 200;
+    font-size: small;
 }
 
 .box-3 {
     flex-flow: column nowrap;
-    margin: 75px 100px;
     background-color: gainsboro;
+    padding: 100px 20%;
 } 
+
+.box-3 .content {
+    font-size: 20px;
+    font-weight: 100;
+}
 
 .box-3 .author {
     align-self: flex-end;
